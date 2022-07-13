@@ -9,6 +9,7 @@ public class Calculadora {
 		
 		int a,b;
 		
+		
 		System.out.println("Digite o primeiro valor: ");
 		a = scan.nextInt(); 
 		
@@ -17,7 +18,7 @@ public class Calculadora {
 		
 		int soma = soma(a,b);
 		int subtracao = subtracao (a,b);
-		int divisao = divisao(a,b);
+		double divisao = divisao(a,b);
 		int multiplicacao = multiplicacao(a,b);
 		
 		System.out.println("soma:  " + soma);
@@ -34,7 +35,7 @@ public class Calculadora {
 		return a - b;
 	}
 	
-	public static int divisao (int a, int b) {
+	public static double divisao (int a, int b) {
 		return a / b;
 	}
 	public static int multiplicacao (int a, int b) {
